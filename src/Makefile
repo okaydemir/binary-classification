@@ -2,7 +2,7 @@ CC = g++
 CFLAGS  = -std=c++11 -g -Wall
 
 prog: DataPoint.o DecisionTree.o Main.o
-	$(CC) $(CFLAGS) DataPoint.o DecisionTree.o Main.o -o project1
+	$(CC) $(CFLAGS) DataPoint.o DecisionTree.o Main.o -o classify
 
 DecisionTree.o: DecisionTree.cpp DecisionTree.h DataPoint.h DataPoint.cpp
 	$(CC) $(CFLAGS) -c DecisionTree.cpp
